@@ -1,0 +1,151 @@
+:root{
+    --color-rojo: #e63946;
+    --color-azul: #457b9d;
+    --color-amarillo: #f0d02f;
+    --color-verde: #52b788;
+}
+
+html{
+    font-size: 62,5%;
+    color: white;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Alata', sans-serif;
+}
+
+body{
+    margin: 0 0;
+    padding: 0 0;
+    user-select: none;
+    background-color: var(--color-amarillo);
+}
+
+h1{
+    font-size: 5rem;
+    text-shadow: 5px 5px var(--color-azul);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 28rem;
+    height: 30rem;
+    border: 10px solid white;
+    border-radius: 10px;
+    background-color: var(--color-rojo);
+}
+
+.display{
+    width: 90%;
+    height: 4rem;
+    border: 3px solid whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    outline: none;
+    user-select: none;
+    cursor: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: end;
+}
+
+.btn, .btn__otro, .btn__operador{
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px var(--color-azul);
+    transition: 0.25s;
+}
+
+.btn:hover, .btn__otro:hover{
+    border: 5px solid var(--color-azul);
+}
+
+.btn__numero{
+    background-color: var(--color-amarillo);
+}
+
+.btn__operador{
+    background-color: #52b788;
+}
+
+.btn__otro{
+    background-color: var(--color-azul);
+}
+
+h4{
+    font-size: medium;
+    margin: 0 0.5rem;
+}
+
+a{
+    color: var(--color-rojo);
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .calculadora{
+        width: 24rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .calculadora{
+        width: 21rem;
+    }
+
+    .btn, .btn__otro, .btn__operador{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .calculadora{
+        width: 18rem;
+    }
+
+    .btn, .btn__otro, .btn__operador{
+        font-size: 1.5rem;
+    }
+}
