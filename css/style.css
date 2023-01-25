@@ -75,9 +75,13 @@ main{
     transition: 0.25s;
 }
 
-.btn:hover, .btn__otro:hover{
+.btn:hover, .btn__operador:hover{
     border: 5px solid var(--color-azul);
 }
+
+.btn__otro:hover{
+    border: 5px solid var(--color-amarillo);
+} 
 
 .btn__numero{
     background-color: var(--color-amarillo);
