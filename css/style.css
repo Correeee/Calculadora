@@ -113,6 +113,20 @@ footer{
     margin-top: auto;
 }
 
+/*WEB*/
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-azul);
+}
+
 @media screen and (max-width: 600px) {
 
     h1{
