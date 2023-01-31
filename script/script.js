@@ -38,12 +38,17 @@ btn_array_operador.forEach(boton => {
     boton.addEventListener("click" , ()=>{
         sonido_btn_comun.play()
         sonido_btn_comun.currentTime = 0
-
         btn_operador = boton.value
 
-        console.log(btn_operador)
+        if(display.value[display.value.length-1] == btn_operador){
 
-        display.value += boton.value
+        }
+
+        else{
+            display.value += btn_operador
+        }
+
+        
         
     })
 })
