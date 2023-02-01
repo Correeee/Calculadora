@@ -78,6 +78,7 @@ main{
     transition: 0.25s;
 }
 
+
 .btn:hover, .btn__operador:hover{
     border: 5px solid var(--color-azul);
 }
