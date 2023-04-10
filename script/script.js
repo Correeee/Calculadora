@@ -133,7 +133,7 @@ document.addEventListener("keypress" , (e) =>{
             if(isNaN(visor.value)){
                 visor.value = "";
             }
-    
+            
             resultado.push(visor.value)
             console.log(display.value)
             console.log("RESULTADO:" , visor.value)
